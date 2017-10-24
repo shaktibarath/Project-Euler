@@ -1,3 +1,8 @@
+
+# Project Euler problem set 01 implementation.
+#
+# Author: Shakti Barath <shakti.barath@gmail.com>
+
 total_sum = 0
 for i in range(1, 1000):
     if (i % 3 == 0 or i % 5 == 0):

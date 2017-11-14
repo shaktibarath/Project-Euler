@@ -26,17 +26,18 @@ def isPalindrome(x):
 
 
 def largest_palindrome():
-    num1 = 999
+    a = 999
     palindrome_arr = []
-    while num1 > 100:
-        num2 = 990
-        if num2 > num1:
-            num2 = num1 - (num1 % 11)
-        while num2 > 109:
-            if isPalindrome(num1 * num2):
-                palindrome_arr.append(num1 * num2)
-            num2 -= 11
-        num1 -= 1
+    while a > 100:
+        b = 990
+        if b > a:
+            b = a - (a%11)
+        while b > 109:
+            if isPalindrome(a * b):
+                palindrome_arr.append(a * b)
+            b -= 11
+        a -= 1
+
     palindrome_arr.sort()
     return palindrome_arr[len(palindrome_arr) -1]
 

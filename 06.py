@@ -11,4 +11,16 @@ Find the difference between the sum of the squares of the first one hundred natu
 Author: Shakti Barath <shakti.barath[at]gmail.com>
 '''
 
+# Function to calculate sum of the squares of first 'n' natural numbers.
+def sum_of_squares(r):
+	sos = (r*(r+1) * (2*r+1))/6
+	return sos
+
+# Function to calculate square of the sum of first 'n' natural numbers.
+
+def square_of_sum(r):
+	sum = (r*(r+1)/2)**2
+	return sum
+
+print(sum_of_squares(100) - square_of_sum(100))
 
